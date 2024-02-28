@@ -1,20 +1,21 @@
-package dao.DB;
+package dao;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Scanner;
 
 public class DB {
 
-    String filePath = "/src/DB/SQL_CREATE_TABLE.sql";
-
-    private static final String SQL_DROP_CREATE_ODONTOLOGOS = "DROP TABLE IF EXISTS ODONTOLOGOS;" +
+  /*  private static final String SQL_DROP_CREATE_ODONTOLOGOS = "DROP TABLE IF EXISTS ODONTOLOGOS;" +
             "CREATE TABLE ODONTOLOGOS (" +
             "ID INT AUTO_INCREMENT PRIMARY KEY," +
             "NUMERO_MATRICULA INT," +
             "NOMBRE VARCHAR(100)," +
-            "APELLIDO VARCHAR(100))";
+            "APELLIDO VARCHAR(100))";*/
 
     public static void crearTablas(){
         Connection connection = null;
@@ -23,9 +24,11 @@ public class DB {
 
             connection = getConnection();
 
-            Statement stmt = connection.createStatement();
 
-            stmt.execute(SQL_DROP_CREATE_ODONTOLOGOS);
+
+            Statement stmt = connection.createStatement();
+            String script = readSQLFile();
+            stmt.execute(script);
 
 
         }catch (Exception e){
@@ -42,7 +45,7 @@ public class DB {
     public static String readSQLFile(){
         String data = null;
         try {
-            File myObj = new File(System.getProperty("user.dir")+"/src/DB/SQL_CREATE_TABLE.sql");
+            File myObj = new File(System.getProperty("user.dir")+"/src/dao/SQL_CREATE_TABLE.sql");
             Scanner myReader = new Scanner(myObj);
             while (myReader.hasNextLine()) {
                 data = myReader.nextLine();
@@ -55,6 +58,7 @@ public class DB {
 
         return data;
     }
+
 
     public static Connection getConnection() throws Exception {
         Class.forName("org.h2.Driver");

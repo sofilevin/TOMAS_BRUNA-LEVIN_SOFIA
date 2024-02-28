@@ -16,3 +16,12 @@
 [2024-02-27 22:30:45] [ INFO ] [OdontologoDAOH2:84] Estos son los odontologos disponibles: [Odontologo con id=1, numero de matricula=123, nombre=Pancracio, apellido=Gonzales, Odontologo con id=2, numero de matricula=456, nombre=Euladia, apellido=Garcia Perez]
 [2024-02-27 23:00:44] [ INFO ] [OdontologoDAOH2:51] El id es: 3. El odontologo llamado Juan Perez y su matricula es: 123
 [2024-02-27 23:00:44] [ INFO ] [OdontologoDAOH2:84] Estos son los odontologos disponibles: [Odontologo con id=1, numero de matricula=123, nombre=Pancracio, apellido=Gonzales, Odontologo con id=2, numero de matricula=456, nombre=Euladia, apellido=Garcia Perez, Odontologo con id=3, numero de matricula=123, nombre=Juan, apellido=Perez]
+[2024-02-27 23:36:35] [ INFO ] [OdontologoDAOH2:51] El id es: 1. El odontologo llamado Pancracio Gonzales y su matricula es: 123
+[2024-02-27 23:36:35] [ INFO ] [OdontologoDAOH2:51] El id es: 2. El odontologo llamado Euladia Garcia Perez y su matricula es: 456
+[2024-02-27 23:36:35] [ INFO ] [OdontologoDAOH2:84] Estos son los odontologos disponibles: [Odontologo con id=1, numero de matricula=123, nombre=Pancracio, apellido=Gonzales, Odontologo con id=2, numero de matricula=456, nombre=Euladia, apellido=Garcia Perez]
+[2024-02-27 23:44:57] [ INFO ] [OdontologoDAOH2:51] El id es: 3. El odontologo llamado Pancracio Gonzales y su matricula es: 123
+[2024-02-27 23:44:57] [ INFO ] [OdontologoDAOH2:51] El id es: 4. El odontologo llamado Euladia Garcia Perez y su matricula es: 456
+[2024-02-27 23:44:57] [ INFO ] [OdontologoDAOH2:84] Estos son los odontologos disponibles: [Odontologo con id=1, numero de matricula=123, nombre=Pancracio, apellido=Gonzales, Odontologo con id=2, numero de matricula=456, nombre=Euladia, apellido=Garcia Perez, Odontologo con id=3, numero de matricula=123, nombre=Pancracio, apellido=Gonzales, Odontologo con id=4, numero de matricula=456, nombre=Euladia, apellido=Garcia Perez]
+[2024-02-27 23:46:14] [ INFO ] [OdontologoDAOH2:51] El id es: 1. El odontologo llamado Pancracio Gonzales y su matricula es: 123
+[2024-02-27 23:46:14] [ INFO ] [OdontologoDAOH2:51] El id es: 2. El odontologo llamado Euladia Garcia Perez y su matricula es: 456
+[2024-02-27 23:46:14] [ INFO ] [OdontologoDAOH2:84] Estos son los odontologos disponibles: [Odontologo con id=1, numero de matricula=123, nombre=Pancracio, apellido=Gonzales, Odontologo con id=2, numero de matricula=456, nombre=Euladia, apellido=Garcia Perez]
