@@ -1,4 +1,4 @@
-package dao;
+package dao.DB;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,6 +6,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class DB {
+
+    String filePath = "/src/DB/SQL_CREATE_TABLE.sql";
 
     private static final String SQL_DROP_CREATE_ODONTOLOGOS = "DROP TABLE IF EXISTS ODONTOLOGOS;" +
             "CREATE TABLE ODONTOLOGOS (" +
@@ -35,6 +37,23 @@ public class DB {
                 e.printStackTrace();
             }
         }
+    }
+
+    public static String readSQLFile(){
+        String data = null;
+        try {
+            File myObj = new File(System.getProperty("user.dir")+"/src/DB/SQL_CREATE_TABLE.sql");
+            Scanner myReader = new Scanner(myObj);
+            while (myReader.hasNextLine()) {
+                data = myReader.nextLine();
+            }
+            myReader.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
+
+        return data;
     }
 
     public static Connection getConnection() throws Exception {
