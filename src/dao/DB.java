@@ -10,12 +10,6 @@ import java.util.Scanner;
 
 public class DB {
 
-  /*  private static final String SQL_DROP_CREATE_ODONTOLOGOS = "DROP TABLE IF EXISTS ODONTOLOGOS;" +
-            "CREATE TABLE ODONTOLOGOS (" +
-            "ID INT AUTO_INCREMENT PRIMARY KEY," +
-            "NUMERO_MATRICULA INT," +
-            "NOMBRE VARCHAR(100)," +
-            "APELLIDO VARCHAR(100))";*/
 
     public static void crearTablas(){
         Connection connection = null;
@@ -23,7 +17,6 @@ public class DB {
         try {
 
             connection = getConnection();
-
 
 
             Statement stmt = connection.createStatement();
